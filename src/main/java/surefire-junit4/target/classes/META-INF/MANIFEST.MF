@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Title: SureFire JUnit4 Runner
+Implementation-Version: 2.18-SNAPSHOT
+Implementation-Vendor-Id: org.apache.maven.surefire
+Specification-Vendor: The Apache Software Foundation
+Build-Jdk: 1.7.0_60
+Built-By: yanyan
+Created-By: Maven Integration for Eclipse
+Specification-Title: SureFire JUnit4 Runner
+Specification-Version: 2.18-SNAPSHOT
+

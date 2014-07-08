@@ -1,0 +1,30 @@
+5a6
+> this.MAX >= this.count
+21d21
+< this.MAX >= this.count
+24a25
+> this.count == return
+26d26
+< this.count >= 1
+28d27
+< this.MAX != this.count
+31,32d29
+< this.count >= this.another
+< this.count >= orig(this.count)
+50d46
+< this.MAX >= this.count
+57a54
+> this.app.MAX >= this.app.count
+208c205,206
+< this.app.another == orig(this.app.another)
+---
+> this.app.count == this.app.another
+> this.app.count == orig(this.app.another)
+210c208
+< this.app.count == 257
+---
+> this.app.count == 1
+218a217
+> this.app.MAX == this.app.count
+222d220
+< this.app.count == 255

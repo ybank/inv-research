@@ -1,0 +1,131 @@
+===========================================================================
+experiments.invariants.AppTest:::OBJECT
+this.app != null
+this.app.MAX == 128
+this.app.another == 1
+this.app.MAX != this.app.count
+===========================================================================
+experiments.invariants.AppTest.AppTest():::EXIT
+this.app.count == 0
+===========================================================================
+experiments.invariants.AppTest.testAfterClearance():::ENTER
+this has only one value
+this.app has only one value
+this.app.count == 0
+===========================================================================
+experiments.invariants.AppTest.testAfterClearance():::EXIT
+this.app == orig(this.app)
+this.app.MAX == orig(this.app.MAX)
+this.app.count == this.app.another
+this.app.count == orig(this.app.another)
+this.app has only one value
+this.app.count == 1
+===========================================================================
+experiments.invariants.AppTest.testCount1():::ENTER
+this has only one value
+this.app has only one value
+this.app.count == 0
+===========================================================================
+experiments.invariants.AppTest.testCount1():::EXIT
+this.app == orig(this.app)
+this.app.MAX == orig(this.app.MAX)
+this.app.another == orig(this.app.another)
+this.app has only one value
+this.app.count == 2
+===========================================================================
+experiments.invariants.AppTest.testCountArbitrary():::ENTER
+this has only one value
+this.app has only one value
+this.app.count == 0
+===========================================================================
+experiments.invariants.AppTest.testCountArbitrary():::EXIT
+this.app == orig(this.app)
+this.app.MAX == orig(this.app.MAX)
+this.app.another == orig(this.app.another)
+this.app has only one value
+this.app.count == 101
+===========================================================================
+experiments.invariants.AppTest.testCountNegative():::ENTER
+this has only one value
+this.app has only one value
+this.app.count == 0
+===========================================================================
+experiments.invariants.AppTest.testCountNegative():::EXIT
+this.app == orig(this.app)
+this.app.MAX == orig(this.app.MAX)
+this.app.another == orig(this.app.another)
+this.app has only one value
+this.app.count == -4
+===========================================================================
+experiments.invariants.AppTest.testMax():::ENTER
+this has only one value
+this.app has only one value
+this.app.count == 0
+===========================================================================
+experiments.invariants.AppTest.testMax():::EXIT
+this.app == orig(this.app)
+this.app.MAX == orig(this.app.MAX)
+this.app.another == orig(this.app.another)
+this.app has only one value
+this.app.count == 129
+===========================================================================
+experiments.invariants.AppTest.testNearMax():::ENTER
+this has only one value
+this.app has only one value
+this.app.count == 0
+===========================================================================
+experiments.invariants.AppTest.testNearMax():::EXIT
+this.app == orig(this.app)
+this.app.MAX == orig(this.app.MAX)
+this.app.another == orig(this.app.another)
+this.app has only one value
+this.app.count == 127
+===========================================================================
+experiments.invariants.EvolvingApp:::OBJECT
+this.MAX == 128
+this.another == 1
+===========================================================================
+experiments.invariants.EvolvingApp.EvolvingApp():::EXIT
+this.count == 0
+===========================================================================
+experiments.invariants.EvolvingApp.clearCount():::ENTER
+this has only one value
+this.count == 0
+===========================================================================
+experiments.invariants.EvolvingApp.clearCount():::EXIT
+this.MAX == orig(this.MAX)
+this.count == orig(this.count)
+this.another == orig(this.another)
+this.count == 0
+===========================================================================
+experiments.invariants.EvolvingApp.increment():::ENTER
+===========================================================================
+experiments.invariants.EvolvingApp.increment():::EXIT15
+this.MAX == return
+this.count == orig(this.count)
+return == orig(this.MAX)
+this.count == 127
+return == 128
+orig(this) has only one value
+===========================================================================
+experiments.invariants.EvolvingApp.increment():::EXIT18
+this.count % return == 0
+this.count - orig(this.count) - 1 == 0
+===========================================================================
+experiments.invariants.EvolvingApp.increment():::EXIT
+this.MAX == orig(this.MAX)
+this.another == orig(this.another)
+(return == 128)  <==>  (this.MAX == return)
+(return == 128)  <==>  (this.count == orig(this.count))
+(return == 128)  ==>  (orig(this) has only one value)
+(return == 128)  ==>  (orig(this.count) == 127)
+(return == 128)  ==>  (this.count == 127)
+===========================================================================
+experiments.invariants.EvolvingApp.setCount(int):::ENTER
+this.count == 0
+===========================================================================
+experiments.invariants.EvolvingApp.setCount(int):::EXIT
+this.MAX == orig(this.MAX)
+this.count == orig(m)
+this.another == orig(this.another)
+Exiting Daikon.
