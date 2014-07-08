@@ -1,0 +1,1 @@
+getCount's postcondition adds confidence that the tests are good, making the count no greater than MAX.

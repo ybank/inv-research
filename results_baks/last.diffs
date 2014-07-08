@@ -1,0 +1,182 @@
+2c2,44
+< experiments.invariants.AppTest:::OBJECT
+---
+> experiments.invariants.EvolvingApp:::OBJECT
+> this.MAX == 128
+> this.count >= 0
+> this.another == 1
+> ===========================================================================
+> experiments.invariants.EvolvingApp.EvolvingApp():::EXIT
+> this.count == 0
+> ===========================================================================
+> experiments.invariants.EvolvingApp.clearCount():::ENTER
+> this has only one value
+> this.count == 0
+> ===========================================================================
+> experiments.invariants.EvolvingApp.clearCount():::EXIT
+> this.MAX == orig(this.MAX)
+> this.count == orig(this.count)
+> this.another == orig(this.another)
+> this.count == 0
+> ===========================================================================
+> experiments.invariants.EvolvingApp.cycleIncrement():::ENTER
+> this.MAX >= this.count
+> ===========================================================================
+> experiments.invariants.EvolvingApp.cycleIncrement():::EXIT
+> this.MAX == orig(this.MAX)
+> this.another == orig(this.another)
+> this.count >= 1
+> return >= 1
+> this.MAX != this.count
+> this.MAX >= return
+> this.MAX >= orig(this.count)
+> this.count >= this.another
+> this.count >= orig(this.count)
+> this.another <= return
+> return != orig(this.count)
+> ===========================================================================
+> experiments.invariants.EvolvingApp.setCount(int):::ENTER
+> this.count == 0
+> ===========================================================================
+> experiments.invariants.EvolvingApp.setCount(int):::EXIT
+> this.MAX == orig(this.MAX)
+> this.another == orig(this.another)
+> this.count % orig(cnt) == 0
+> ===========================================================================
+> experiments.invariants.EvolvingAppTest:::OBJECT
+4a47
+> this.app.count >= 0
+8c51
+< experiments.invariants.AppTest.AppTest():::EXIT
+---
+> experiments.invariants.EvolvingAppTest.EvolvingAppTest():::EXIT
+11c54
+< experiments.invariants.AppTest.testAfterClearance():::ENTER
+---
+> experiments.invariants.EvolvingAppTest.testAfterClearance():::ENTER
+16c59
+< experiments.invariants.AppTest.testAfterClearance():::EXIT
+---
+> experiments.invariants.EvolvingAppTest.testAfterClearance():::EXIT
+24c67
+< experiments.invariants.AppTest.testCount1():::ENTER
+---
+> experiments.invariants.EvolvingAppTest.testCount1():::ENTER
+29c72
+< experiments.invariants.AppTest.testCount1():::EXIT
+---
+> experiments.invariants.EvolvingAppTest.testCount1():::EXIT
+36c79
+< experiments.invariants.AppTest.testCountArbitrary():::ENTER
+---
+> experiments.invariants.EvolvingAppTest.testCountArbitrary():::ENTER
+41c84
+< experiments.invariants.AppTest.testCountArbitrary():::EXIT
+---
+> experiments.invariants.EvolvingAppTest.testCountArbitrary():::EXIT
+48c91
+< experiments.invariants.AppTest.testCountNegative():::ENTER
+---
+> experiments.invariants.EvolvingAppTest.testCountArbitraryNegative():::ENTER
+53c96
+< experiments.invariants.AppTest.testCountNegative():::EXIT
+---
+> experiments.invariants.EvolvingAppTest.testCountArbitraryNegative():::EXIT
+56c99,100
+< this.app.another == orig(this.app.another)
+---
+> this.app.count == this.app.another
+> this.app.count == orig(this.app.another)
+58c102
+< this.app.count == -4
+---
+> this.app.count == 1
+60c104
+< experiments.invariants.AppTest.testMax():::ENTER
+---
+> experiments.invariants.EvolvingAppTest.testCountNegative():::ENTER
+65c109
+< experiments.invariants.AppTest.testMax():::EXIT
+---
+> experiments.invariants.EvolvingAppTest.testCountNegative():::EXIT
+68c112,113
+< this.app.another == orig(this.app.another)
+---
+> this.app.count == this.app.another
+> this.app.count == orig(this.app.another)
+70c115
+< this.app.count == 129
+---
+> this.app.count == 1
+72c117
+< experiments.invariants.AppTest.testNearMax():::ENTER
+---
+> experiments.invariants.EvolvingAppTest.testMax():::ENTER
+77c122
+< experiments.invariants.AppTest.testNearMax():::EXIT
+---
+> experiments.invariants.EvolvingAppTest.testMax():::EXIT
+82,89c127
+< this.app.count == 127
+< ===========================================================================
+< experiments.invariants.EvolvingApp:::OBJECT
+< this.MAX == 128
+< this.another == 1
+< ===========================================================================
+< experiments.invariants.EvolvingApp.EvolvingApp():::EXIT
+< this.count == 0
+---
+> this.app.count == 129
+91c129
+< experiments.invariants.EvolvingApp.clearCount():::ENTER
+---
+> experiments.invariants.EvolvingAppTest.testNearMax():::ENTER
+93,125c131,132
+< this.count == 0
+< ===========================================================================
+< experiments.invariants.EvolvingApp.clearCount():::EXIT
+< this.MAX == orig(this.MAX)
+< this.count == orig(this.count)
+< this.another == orig(this.another)
+< this.count == 0
+< ===========================================================================
+< experiments.invariants.EvolvingApp.increment():::ENTER
+< ===========================================================================
+< experiments.invariants.EvolvingApp.increment():::EXIT15
+< this.MAX == return
+< this.count == orig(this.count)
+< return == orig(this.MAX)
+< this.count == 127
+< return == 128
+< orig(this) has only one value
+< ===========================================================================
+< experiments.invariants.EvolvingApp.increment():::EXIT18
+< this.count % return == 0
+< this.count - orig(this.count) - 1 == 0
+< ===========================================================================
+< experiments.invariants.EvolvingApp.increment():::EXIT
+< this.MAX == orig(this.MAX)
+< this.another == orig(this.another)
+< (return == 128)  <==>  (this.MAX == return)
+< (return == 128)  <==>  (this.count == orig(this.count))
+< (return == 128)  ==>  (orig(this) has only one value)
+< (return == 128)  ==>  (orig(this.count) == 127)
+< (return == 128)  ==>  (this.count == 127)
+< ===========================================================================
+< experiments.invariants.EvolvingApp.setCount(int):::ENTER
+< this.count == 0
+---
+> this.app has only one value
+> this.app.count == 0
+127,130c134,139
+< experiments.invariants.EvolvingApp.setCount(int):::EXIT
+< this.MAX == orig(this.MAX)
+< this.count == orig(m)
+< this.another == orig(this.another)
+---
+> experiments.invariants.EvolvingAppTest.testNearMax():::EXIT
+> this.app == orig(this.app)
+> this.app.MAX == orig(this.app.MAX)
+> this.app.another == orig(this.app.another)
+> this.app has only one value
+> this.app.count == 127

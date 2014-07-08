@@ -1,0 +1,27 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+SureFire JUnit4 Runner
+
+
+From: 'an unknown organization'
+  - surefire-helper  maven.daikon.integration:surefire-helper:jar:0.0.2-SNAPSHOT
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Maven Shared Utils (http://maven.apache.org/shared/maven-shared-utils/) org.apache.maven.shared:maven-shared-utils:jar:0.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Shared java5 code for all providers. (http://maven.apache.org/surefire/surefire-providers/common-java5) org.apache.maven.surefire:common-java5:jar:2.18-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Shared JUnit3 Provider Code (http://maven.apache.org/surefire/surefire-providers/common-junit3) org.apache.maven.surefire:common-junit3:jar:2.18-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Shared JUnit4 Provider Code (http://maven.apache.org/surefire/surefire-providers/common-junit4) org.apache.maven.surefire:common-junit4:jar:2.18-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - SureFire API (http://maven.apache.org/surefire/surefire-api) org.apache.maven.surefire:surefire-api:jar:2.18-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

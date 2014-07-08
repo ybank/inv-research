@@ -1,0 +1,29 @@
+package edu.ucsd.cs.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class InvokerTest {
+
+//	@Test
+//	public void testInvoker() {
+//		edu.ucsd.cs.Invoker.main(new String[]{
+//			"true", "--daikon", "edu.ucsd.cs.tests.DataStructures.StackArTester"
+//		});
+////		try {
+////			Thread.sleep(5000);
+////		} catch (InterruptedException e) {
+////			// TODO Auto-generated catch block
+////			e.printStackTrace();
+////		}
+//		System.out.println("still alive.");
+//	}
+	
+	@Test
+	public void testPreDaikon() {
+		edu.ucsd.cs.PreDaikon.outputDaikonCmd(new String[]{
+			"edu.ucsd.cs.tests.DataStructures.StackArTester"});
+	}
+
+}

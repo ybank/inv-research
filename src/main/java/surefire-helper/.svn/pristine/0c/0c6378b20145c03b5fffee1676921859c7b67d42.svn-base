@@ -1,0 +1,1 @@
+java -cp $CLASSPATH:/home/yan/Development/workspace/surefire-helper/target/test-classes:/home/yan/Development/workspace/surefire-helper/target/classes: daikon.Chicory --daikon edu.ucsd.cs.tests.DataStructures.StackArTester
