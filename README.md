@@ -11,4 +11,6 @@ YY: source code uploaded.
  
  After setting up local maven environment, go to any downloaded maven project and run the following command to see the contracts infered.
  
- #mvn test org.apache.maven.plugins:maven-surefire-plugin:2.18-SNAPSHOT:test
+         #mvn test org.apache.maven.plugins:maven-surefire-plugin:2.18-SNAPSHOT:test
+
+ 
