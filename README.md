@@ -5,7 +5,7 @@ This project serves for the purposes of the research into database of invariants
 
 ### Tool Status
 
-**[Sep 8, 2016] UPDATE: this repository is deprecated. The latest development is [Getty](https://github.com/ybank/semantiful-differentials-getty)**
+**[Sep 8, 2016] UPDATE: this repository is deprecated. The latest development is [Getty](https://github.com/ybank/semantiful-differentials-getty).**
 
 ~~YY: source code uploaded.~~
 
@@ -15,4 +15,4 @@ This project serves for the purposes of the research into database of invariants
  
  ~~After setting up local maven environment, go to any downloaded maven project, navigate to the directory where the pom.xml file is located and run the following command to see the contracts infered.~~
  
-         ~~mvn test org.apache.maven.plugins:maven-surefire-plugin:2.18-SNAPSHOT:test~~
+~~`mvn test org.apache.maven.plugins:maven-surefire-plugin:2.18-SNAPSHOT:test`~~
