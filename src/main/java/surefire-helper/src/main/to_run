@@ -1,1 +1,0 @@
-mvn test org.apache.maven.plugins:maven-surefire-plugin:2.18-SNAPSHOT:test
